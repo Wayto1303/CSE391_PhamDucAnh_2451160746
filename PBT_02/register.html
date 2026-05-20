@@ -11,14 +11,12 @@
       <fieldset>
         <legend>Thông tin cá nhân</legend>
 
-        <label for="fullname">Họ tên</label>
         <input type="text" name="fullname" id="fullname" placeholder="Nguyễn Văn A" required minlength="2" maxlength="50" />
 
-        <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="example@gmail.com" required />
 
-        <label for="phone">Số điện thoại</label>
-        <input type="tel" name="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}" required />
+
+      <input type="tel" name="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}" required />
 
         <label for="dob">Ngày sinh</label>
         <input type="date" name="dob" id="dob" max="2026-04-28" />
@@ -28,13 +26,9 @@
       <fieldset>
         <legend>Tài khoản</legend>
 
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" placeholder="Nguyen05" pattern="[a-zA-Z0-9_]{3,20}" required />
-
-        <label for="password">Password</label>
+       <input type="text" name="username" id="username" placeholder="Nguyen05" pattern="[a-zA-Z0-9_]{3,20}" required />
         <input type="password" name="password" id="password" minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" required />
 
-        <label for="confirm-password">Xác nhận mật khẩu</label>
         <input type="password" id="confirm-password" name="confirm-password" minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" required />
       </fieldset>
 
