@@ -42,3 +42,34 @@ Google ưu tiên `<nav>` để xác định cấu trúc điều hướng của t
 
 <footer>© 2026 ShopTLU</footer>
 ```
+_Câu A3_
+
+```
+┌─────────────┐
+│   Hộp 1     │  ← div: chiếm cả hàng
+└─────────────┘
+Text A Text B     ← span: nằm cùng hàng nhau
+┌─────────────┐
+│   Hộp 2     │  ← div: xuống hàng mới
+└─────────────┘
+Text C **Text D**  ← span + strong: cùng hàng, Text D in đậm
+┌─────────────┐
+│   Hộp 3     │  ← div: xuống hàng mới
+└─────────────┘
+```
+
+_Câu A4_
+`<thead>` là phần đầu bảng (tiêu đề cột)
+`<tbody>` là phần thân bảng (dữ liệu chính)
+`<tfoot>` là phần chân bảng (tổng kết)
+
+Lý do không nên dùng table để tạo layout trang web
+
+1. Lý do 1 — Sai ngữ nghĩa (semantic)
+   `<table>` sinh ra để hiển thị dữ liệu dạng bảng, không phải để chia cột layout. Google và screen reader hiểu `<table>` là "đây là bảng dữ liệu" — dùng sai mục đích làm SEO và accessibility kém đi.
+
+2. Lý do 2 — Code phức tạp, khó bảo trì
+   Layout bằng table phải lồng `<tr>`, `<td>` chằng chịt, rất khó đọc và sửa. Thêm một cột hay thay đổi bố cục là phải sửa rất nhiều chỗ.
+
+3. Lý do 3 — Tải chậm hơn
+   Trình duyệt phải đọc toàn bộ table trước khi render, vì cần biết kích thước tất cả các ô.
