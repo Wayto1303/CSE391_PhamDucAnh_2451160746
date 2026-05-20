@@ -80,3 +80,4 @@ Không nên dùng khi:
 - Ảnh sản phẩm iPhone 16 → `alt="iPhone 16 màu đen titan, mặt trước và mặt sau"`
 - Ảnh trang trí (decorative) → `alt=""` — để rỗng, screen reader sẽ bỏ qua, tránh đọc những thứ không có nghĩa.
 - Ảnh biểu đồ doanh thu Q1/2026 → `alt="Biểu đồ cột doanh thu Q1/2026, tháng 3 đạt cao nhất với 4.2 tỷ đồng"`
+_Câu A5_Cách 1 — `<img>`- Dùng khi ảnh chỉ để minh họa, không cần chú thích hiển thị trên trang.- Ảnh là một phần của nội dung xung quanh, không đứng độc lập.  Ví dụ thực tế:- Avatar người dùng trong header hoặc comment → chỉ cần hiển thị ảnh, không cần caption.Cách 2 — `<figure>` + `<figcaption>`- Dùng khi ảnh cần có chú thích hiển thị bên dưới để bổ sung thông tin.- Ảnh và caption là một khối nội dung độc lập, có thể tách ra khỏi văn bản mà vẫn hiểu được.  Ví dụ thực tế:- Trang chi tiết sản phẩm → ảnh sản phẩm kèm tên, giá, màu sắc bên dưới.
