@@ -12,3 +12,8 @@ _Câu A1_
 8. `type="radio"` → Ô tròn nhỏ, chỉ chọn 1 trong nhóm cùng name → Dùng cho chọn phương thức thanh toán
 9. `type="file"` → Nút chọn tệp, giới hạn định dạng bằng accept → Dùng cho upload ảnh đánh giá sản phẩm
 10. `type="search"` → Ô nhập text có icon 🔍 kèm nút xóa nhanh, không tự validate → Dùng cho thanh tìm kiếm sản phẩm
+- TH1: Form không submit vì `required` bắt buộc phải có giá trị. `value=""` = rỗng → vi phạm, hiện tooltip "Vui lòng điền vào trường này"
+- TH2: Form không submit vì `type="email"` tự validate định dạng phải có `@` và domain. `"abc"` không có `@` → sai định dạng, hiện tooltip "Vui lòng nhập địa chỉ email"
+- TH3: Form không submit vì `max="10"` giới hạn giá trị tối đa. `15 > 10` → vi phạm, hiện tooltip "Giá trị phải nhỏ hơn hoặc bằng 10"
+- TH4: Form không submit vì `pattern` yêu cầu đúng 10 chữ số liên tiếp. `"abc123"` có chữ cái và chỉ 6 ký tự → không khớp regex, hiện tooltip "Vui lòng khớp định dạng yêu cầu"
+- TH5: Form không submit vì `minlength="8"` yêu cầu độ dài tối thiểu 8 ký tự. `"123"` chỉ có 3 ký tự → vi phạm, hiện tooltip "Phải có từ 8 ký tự trở lên"
