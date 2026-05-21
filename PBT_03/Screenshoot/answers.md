@@ -293,7 +293,7 @@ Trường hợp CÓ dùng border-box:
 - `#demo.text { color: darkorange; }` - Specificity: (1, 1, 0)
 - `p#demo.text.highlight { color: red; }` - Specificity: (1, 2, 1) ← THẮNG!
 
-## Câu 2 — Element cuối cùng hiển thị màu gì?
+2. Element cuối cùng hiển thị màu gì? Tại sao?
 
 Màu: `red` — do Rule 10 có selector `p#demo.text.highlight` với specificity cao nhất.
 
